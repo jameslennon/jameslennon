@@ -11,12 +11,11 @@ section {
 }
 
 h1 {
-  font-size: 2em;
+  font-size:2em;
   text-align:center;
 }
 
 #logo {
-  max-width:140px;
   padding-right:5%;
   vertical-align: middle;
 }
@@ -58,4 +57,39 @@ nav {
 
 nav a {
   color:#262626;
+}
+
+.half {
+  width:49%;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.half img {
+  width:100%;
+}
+
+.half h1 {
+  font-size: 2em;
+  padding-bottom:20px;
+  text-align:left;
+}
+
+.half p {
+  font-weight:100;
+  padding-bottom:20px;
+}
+
+.details {
+  padding-left:40px;
+  width:calc(49% - 40px);
+}
+
+@media screen and (max-width: 860px) {
+  .half {
+    width:100%;
+    display:block;
+    vertical-align: top;
+    padding-bottom:100px;
+  }
 }

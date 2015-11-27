@@ -3,6 +3,7 @@
   <head>
     <title>BAF Computer &amp; Laptop Maintenance</title>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -24,7 +25,22 @@
       <h1>One-to-One Tutoring</h1>
     </section>
     <section id="contact" class="bg-blue">
-      <h1 id="logo_text"><img src="img/baf_logo_2.png" id="logo" />BAF</h1>
+      <div class="half">
+        <img src="img/baf_logo.png" id="logo" />
+      </div>
+      <div class="details half">
+        <h1 id="logo_text">BAF</h1>
+        <p>Phone: 081 234 5678</p>
+        <p>Email: baf@gmail.com</p>
+      </div>
     </section>
+    <script>
+      $("nav").on("click", "a", function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 1000);
+        return false;
+      });
+    </script>
   </body>
 </html>
