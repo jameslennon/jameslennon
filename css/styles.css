@@ -85,6 +85,18 @@ nav a {
   width:calc(49% - 40px);
 }
 
+.details a {
+  color:#3f3f3f;
+  text-decoration: none;
+}
+
+.details a img {
+  vertical-align: middle;
+  width:40px;
+  height:40px;
+  margin-right:20px;
+}
+
 @media screen and (max-width: 860px) {
   .half {
     width:100%;
